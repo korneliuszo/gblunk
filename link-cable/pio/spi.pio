@@ -1,0 +1,65 @@
+;
+; Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+;
+; SPDX-License-Identifier: BSD-3-Clause
+;
+
+.program gb_sio_master
+.side_set 1
+
+; Clock phase = 1: data transitions on the leading edge of each SCK pulse, and
+; is captured on the trailing edge.
+
+.wrap_target
+	set x, 7           side 1
+	pull               side 1 ; stall in sane location
+	irq wait 4         side 1 ; stall to sync
+bitloop:
+    out pins, 1        side 0 [1] ; Stall here on empty (keep SCK deasserted)
+    in pins, 1         side 1     ; Input data, deassert SCK
+    jmp x-- bitloop    side 1
+.wrap  
+
+.program gb_sio_clocker
+.wrap_target
+	irq clear 4
+.wrap
+
+
+% c-sdk {
+#include "hardware/gpio.h"
+static inline void pio_gb_sio_core_init(PIO pio, uint sm, uint prog_offs,
+        float clkdiv, uint pin_sck, uint pin_mosi, uint pin_miso) {
+    pio_sm_config c = gb_sio_master_program_get_default_config(prog_offs);
+    sm_config_set_out_pins(&c, pin_mosi, 1);
+    sm_config_set_in_pins(&c, pin_miso);
+    sm_config_set_sideset_pins(&c, pin_sck);
+    // Only support MSB-first in this example code (shift to left, auto push/pull, threshold=nbits)
+    sm_config_set_out_shift(&c, false, false, 8);
+    sm_config_set_in_shift(&c, false, true, 8);
+    sm_config_set_clkdiv(&c, clkdiv);
+
+    // MOSI, SCK output are low, MISO is input
+    pio_sm_set_pins_with_mask(pio, sm, 0, (1u << pin_sck) | (1u << pin_mosi));
+    pio_sm_set_pindirs_with_mask(pio, sm, (1u << pin_sck) | (1u << pin_mosi), (1u << pin_sck) | (1u << pin_mosi) | (1u << pin_miso));
+    pio_gpio_init(pio, pin_mosi);
+    pio_gpio_init(pio, pin_miso);
+    pio_gpio_init(pio, pin_sck);
+
+    gpio_set_outover(pin_sck, GPIO_OVERRIDE_NORMAL);
+    // SPI is synchronous, so bypass input synchroniser to reduce input delay.
+    hw_set_bits(&pio->input_sync_bypass, 1u << pin_miso);
+
+    pio_sm_init(pio, sm, prog_offs, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+static inline void pio_gb_sio_clocker_init(PIO pio, uint sm, uint prog_offs,
+        float clkdiv) {
+    pio_sm_config c = gb_sio_clocker_program_get_default_config(prog_offs);
+
+    sm_config_set_clkdiv(&c, clkdiv);
+
+    pio_sm_init(pio, sm, prog_offs, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
