@@ -4,7 +4,7 @@ import struct
 
 class GB_Lunk:
     def __init__(self,port):
-        self.c = serial.Serial(port,50000)
+        self.c = serial.Serial(port,30000)
     
     def write_chunk(self,addr,data):
         l=len(data)
