@@ -17,11 +17,11 @@ class GB_Lunk:
     
     def read_chunk(self,addr,l):
         l = min(l,256)
-        pkt=struct.pack(">cBHb",b"R",l%256,addr,0) + bytes(l+1)
+        pkt=struct.pack(">cBHb",b"R",l%256,addr,0) + bytes(l)
         self.c.write(pkt)
         self.c.flush()
         self.c.read(5)
-        return self.c.read(l+1)[:-1]
+        return self.c.read(l)
 
     def write(self,addr,data):
         [self.write_chunk(addr+i,data[i:i+256]) for i in range(0, len(data), 256)]
