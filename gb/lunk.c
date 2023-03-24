@@ -15,7 +15,7 @@ typedef void (*my_ram_function_t)(void);
 void main(void)
 {
     memcpy(&_RAMCODE,ramcode,INCBIN_SIZE(ramcode));
-    puts("Lunk by Kaede");
+    puts("Lunk v2.1 by Kaede");
     disable_interrupts();
     ((my_ram_function_t)&lunk_core)();
 }
