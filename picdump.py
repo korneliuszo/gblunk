@@ -6,6 +6,7 @@ import sys
 class Picdump():
     def __init__(self,conn):
         self.conn = conn
+
     def dump(self):
         self.conn.write(0x4000,bytes([0x00]))
         data=self.conn.read(0xA100,(112*128)//4)
@@ -21,6 +22,17 @@ class Picdump():
                 val|=((hb & (1<<(7-x%8)))>>(7-x%8))*2
                 img.putpixel((x,y),val)
         return img
+
+    def capture(self,cfg):
+        sanecfg = bytearray(cfg)
+        sanecfg[0] &= 0xFE
+        self.conn.write(0x4000,bytes([0x10]))
+        self.conn.write(0xA000,sanecfg)
+        self.conn.write(0xA000,bytes([sanecfg[0] | 0x01]))
+        while self.conn.read(0xA000, 1)[0] &0x01:
+            pass
+
+
 if __name__ == "__main__":
     p= Picdump(gb_lunk.GB_Lunk("/dev/serial/by-id/usb-Kaede_USB_to_Game_Boy_Link_Cable_1-if00"))
     p.dump().save(sys.argv[1])
