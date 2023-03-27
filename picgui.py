@@ -10,7 +10,7 @@ Gst.init(sys.argv)
 
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication, QWidget, QFileDialog
-from PySide6.QtCore import QFile, QIODevice, QObject, Slot
+from PySide6.QtCore import QFile, QIODevice, QObject, Slot, QTimer
 
 import gb_lunk
 import picdump
@@ -149,7 +149,6 @@ class CoreLogic(QObject):
         if retval != Gst.FlowReturn.OK:
             print(retval)
 
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
@@ -176,7 +175,11 @@ if __name__ == "__main__":
         file.write(dump_cfg(window))
         file.close()
     window.Save.clicked.connect(lambda : save(window))
-    
+    timer = QTimer(window)
+    timer.timeout.connect(lambda: corelogic.snap(window))
+    timer.setInterval(100)
+    window.autorun_ms.valueChanged.connect(timer.setInterval)
+    window.autorun.stateChanged.connect(lambda x: timer.start() if x else timer.stop())
     window.show()
 
     sys.exit(app.exec())
