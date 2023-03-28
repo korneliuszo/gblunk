@@ -15,8 +15,10 @@ from PySide6.QtCore import QFile, QIODevice, QObject, Slot, QTimer
 import gb_lunk
 import picdump
 
-class GstDisplay():
+class CDC_comm():
     def __init__(self, wind):
+        self.lunk =gb_lunk.GB_Lunk("/dev/serial/by-id/usb-Kaede_USB_to_Game_Boy_Link_Cable_1-if00")
+        self.dumper = picdump.Picdump(self.lunk)
         self.pipeline = Gst.parse_launch(
             'appsrc name=source caps=video/x-raw,format=RGB,width=128,height=112 is-live=true do-timestamp=true ! videoconvert name = convert ! xvimagesink name=sink')  # xvimagesink, ximagesink
         self.source = self.pipeline.get_by_name("source")
@@ -48,6 +50,20 @@ class GstDisplay():
 
     def start_pipeline(self):
         self.pipeline.set_state(Gst.State.PLAYING)
+
+    def snap(self,window):
+        conf = dump_cfg(window)
+        self.dumper.capture(conf)
+        image=self.dumper.dump()
+        image=image.convert("RGB")
+        data=image.tobytes()
+        buf = Gst.Buffer.new_allocate(None, len(data), None)
+        buf.fill(0, data)
+        retval = self.source.emit('push-buffer', buf)
+        if retval != Gst.FlowReturn.OK:
+            print(retval)
+
+
 
 def dump_cfg(window):
     return bytes([
@@ -185,30 +201,6 @@ def load_cfg(window,data):
     window.A034.setValue(data[0x34])
     window.A035.setValue(data[0x35])
 
-class CoreLogic(QObject):
-    def __init__(self, parent, appsrc,window):
-        super().__init__(parent)
-        self.lunk =gb_lunk.GB_Lunk("/dev/serial/by-id/usb-Kaede_USB_to_Game_Boy_Link_Cable_1-if00")
-        self.dumper = picdump.Picdump(self.lunk)
-        self.appsrc=appsrc
-        self.window = window
-
-    def snap(self,window):
-
-        conf = dump_cfg(window)
-        
-        self.dumper.capture(conf)
-
-
-        image=self.dumper.dump()
-        image=image.convert("RGB")
-        data=image.tobytes()
-        buf = Gst.Buffer.new_allocate(None, len(data), None)
-        buf.fill(0, data)
-        retval = self.appsrc.emit('push-buffer', buf)
-        if retval != Gst.FlowReturn.OK:
-            print(retval)
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
@@ -224,11 +216,16 @@ if __name__ == "__main__":
         print(loader.errorString())
         sys.exit(-1)
 
-    window.player = GstDisplay(window.video)
+    def connect_cdc(window):
+        window.player = CDC_comm(window.video)
+        window.autorun.setEnabled(True)
+        window.autorun_ms.setEnabled(True)
+        window.Snap.setEnabled(True)
+        window.CCDC.setEnabled(False)
     
-    corelogic = CoreLogic(window, window.player.source, window)
+    window.CCDC.clicked.connect(lambda x: connect_cdc(window))
 
-    window.Snap.clicked.connect(lambda x: corelogic.snap(window))
+    window.Snap.clicked.connect(lambda x: window.player.snap(window))
     def save(window):
         name = QFileDialog.getSaveFileName(window, 'Save File')
         file = open(name[0],'wb')
@@ -243,7 +240,7 @@ if __name__ == "__main__":
     window.Save.clicked.connect(lambda : save(window))
     window.Read.clicked.connect(lambda : load(window))
     timer = QTimer(window)
-    timer.timeout.connect(lambda: corelogic.snap(window))
+    timer.timeout.connect(lambda: window.player.snap(window))
     timer.setInterval(100)
     window.autorun_ms.valueChanged.connect(timer.setInterval)
     window.autorun.stateChanged.connect(lambda x: timer.start() if x else timer.stop())
