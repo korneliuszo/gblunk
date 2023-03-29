@@ -222,9 +222,14 @@ if __name__ == "__main__":
         window.autorun_ms.setEnabled(True)
         window.Snap.setEnabled(True)
         window.CCDC.setEnabled(False)
-    
-    window.CCDC.clicked.connect(lambda x: connect_cdc(window))
 
+    def setup_uvc(window):
+        import usb.core
+        import usb.util
+        dev = usb.core.find(idVendor=0xcafe, idProduct=0x4020)
+        dev.ctrl_transfer(usb.util.CTRL_TYPE_VENDOR | usb.util.CTRL_OUT,1,data_or_wLength=dump_cfg(window)) 
+
+    window.CCDC.clicked.connect(lambda x: connect_cdc(window))
     window.Snap.clicked.connect(lambda x: window.player.snap(window))
     def save(window):
         name = QFileDialog.getSaveFileName(window, 'Save File')
@@ -239,6 +244,7 @@ if __name__ == "__main__":
         load_cfg(window,data)
     window.Save.clicked.connect(lambda : save(window))
     window.Read.clicked.connect(lambda : load(window))
+    window.SetupUVC.clicked.connect(lambda : setup_uvc(window))
     timer = QTimer(window)
     timer.timeout.connect(lambda: window.player.snap(window))
     timer.setInterval(100)
