@@ -19,6 +19,7 @@ target_sources(gbuvc PRIVATE
 
         # PIO components
         pio/pio_spi.c
+        default_params.s
         )
 
 #pico_set_binary_type(gbuvc copy_to_ram)        

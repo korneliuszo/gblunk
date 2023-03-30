@@ -35,6 +35,8 @@ pio_spi_inst_t spi = { .pio = pio0, .sm = 0, .sm_clk = 1 };
 #define PIN_SOUT 2
 
 static uint8_t regs[0x36];
+extern uint8_t default_params[];
+
 static bool regs_updated;
 
 bool tud_vendor_control_xfer_cb(uint8_t rhport, uint8_t stage,
@@ -75,6 +77,10 @@ void led_blinking_task(void);
 
 int main(void) {
 	board_init();
+
+	memcpy(regs,default_params,0x36);
+	regs[0]&=0xFE;
+	regs_updated = true;
 
 	uint master_prog_offs = pio_add_program(spi.pio, &gb_sio_master_program);
 	uint clocker_prog_offs = pio_add_program(spi.pio, &gb_sio_clocker_program);
