@@ -41,342 +41,10 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_4">
-       <item row="4" column="12">
-        <widget class="QLabel" name="label_48">
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_39">
          <property name="text">
-          <string>A029</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="8">
-        <widget class="QLabel" name="label_44">
-         <property name="text">
-          <string>A025</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="4">
-        <widget class="QSpinBox" name="A015">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>139</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="8">
-        <widget class="QLabel" name="label_56">
-         <property name="text">
-          <string>A031</string>
-         </property>
-        </widget>
-       </item>
-       <item row="10" column="1">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="6" column="10">
-        <widget class="QSpinBox" name="A027">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>144</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="label_17">
-         <property name="text">
-          <string>A00A</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="7">
-        <widget class="QSpinBox" name="A00C">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>138</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="10">
-        <widget class="QLabel" name="label_46">
-         <property name="text">
-          <string>A027</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="7">
-        <widget class="QLabel" name="label_19">
-         <property name="text">
-          <string>A00C</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="4">
-        <widget class="QSpinBox" name="A021">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>144</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="6">
-        <widget class="QLabel" name="label_18">
-         <property name="text">
-          <string>A00B</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="7">
-        <widget class="QSpinBox" name="A030">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>142</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="label_15">
-         <property name="text">
-          <string>A008</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="11">
-        <widget class="QLabel" name="label_35">
-         <property name="text">
-          <string>A01C</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="7">
-        <widget class="QSpinBox" name="A024">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>137</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QSpinBox" name="A009">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>143</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QLabel" name="label_38">
-         <property name="text">
-          <string>A01F</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="5">
-        <widget class="QLabel" name="label_41">
-         <property name="text">
-          <string>A022</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="7">
-        <widget class="QSpinBox" name="A018">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>143</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="5">
-        <widget class="QSpinBox" name="A022">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>160</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QSpinBox" name="A007">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>146</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="9">
-        <widget class="QLabel" name="label_45">
-         <property name="text">
-          <string>A026</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="10">
-        <widget class="QSpinBox" name="A01B">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>140</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="10">
-        <widget class="QSpinBox" name="A033">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>139</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="6">
-        <widget class="QLabel" name="label_54">
-         <property name="text">
-          <string>A02F</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="5">
-        <widget class="QSpinBox" name="A02E">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>152</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="4">
-        <widget class="QSpinBox" name="A02D">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>140</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QSpinBox" name="A014">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>186</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="9">
-        <widget class="QSpinBox" name="A00E">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>171</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="11">
-        <widget class="QSpinBox" name="A034">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>151</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="label_25">
-         <property name="text">
-          <string>A012</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="11">
-        <widget class="QLabel" name="label_59">
-         <property name="text">
-          <string>A034</string>
+          <string>A020</string>
          </property>
         </widget>
        </item>
@@ -393,414 +61,20 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="12">
-        <widget class="QLabel" name="label_36">
+       <item row="0" column="5">
+        <widget class="QLabel" name="label_17">
          <property name="text">
-          <string>A01D</string>
+          <string>A00A</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="4">
-        <widget class="QLabel" name="label_40">
-         <property name="text">
-          <string>A021</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="12">
-        <widget class="QSpinBox" name="A029">
+       <item row="9" column="8">
+        <widget class="QSpinBox" name="A031">
          <property name="maximum">
           <number>255</number>
          </property>
          <property name="value">
-          <number>201</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="12">
-        <widget class="QLabel" name="label_60">
-         <property name="text">
-          <string>A035</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="label_27">
-         <property name="text">
-          <string>A014</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="11">
-        <widget class="QLabel" name="label_47">
-         <property name="text">
-          <string>A028</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="7">
-        <widget class="QLabel" name="label_55">
-         <property name="text">
-          <string>A030</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="9">
-        <widget class="QSpinBox" name="A032">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>189</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QLabel" name="label_49">
-         <property name="text">
-          <string>A02A</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="6">
-        <widget class="QSpinBox" name="A023">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>204</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="2">
-        <widget class="QSpinBox" name="A02B">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>156</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="8">
-        <widget class="QLabel" name="label_20">
-         <property name="text">
-          <string>A00D</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="2">
-        <widget class="QSpinBox" name="A01F">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>148</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="12">
-        <widget class="QLabel" name="label_24">
-         <property name="text">
-          <string>A011</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QSpinBox" name="A006">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>137</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="10">
-        <widget class="QLabel" name="label_22">
-         <property name="text">
-          <string>A00F</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="1">
-        <widget class="QSpinBox" name="A02A">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>142</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLabel" name="label_37">
-         <property name="text">
-          <string>A01E</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QSpinBox" name="A008">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>162</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="12">
-        <widget class="QSpinBox" name="A035">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>177</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="9">
-        <widget class="QSpinBox" name="A01A">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>195</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="9">
-        <widget class="QLabel" name="label_33">
-         <property name="text">
-          <string>A01A</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="3">
-        <widget class="QSpinBox" name="A02C">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>192</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QSpinBox" name="A00B">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>198</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="2">
-        <widget class="QLabel" name="label_50">
-         <property name="text">
-          <string>A02B</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QLabel" name="label_30">
-         <property name="text">
-          <string>A017</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="7">
-        <widget class="QLabel" name="label_43">
-         <property name="text">
-          <string>A024</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="8">
-        <widget class="QSpinBox" name="A019">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>157</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="11">
-        <widget class="QSpinBox" name="A010">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>161</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QSpinBox" name="A013">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>154</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="9">
-        <widget class="QLabel" name="label_57">
-         <property name="text">
-          <string>A032</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QSpinBox" name="A012">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>141</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>A007</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="11">
-        <widget class="QSpinBox" name="A01C">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>153</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="7">
-        <widget class="QLabel" name="label_31">
-         <property name="text">
-          <string>A018</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="12">
-        <widget class="QSpinBox" name="A011">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>207</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="6">
-        <widget class="QSpinBox" name="A017">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>174</number>
-         </property>
-         <property name="displayIntegerBase">
-          <number>16</number>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="3">
-        <widget class="QLabel" name="label_51">
-         <property name="text">
-          <string>A02C</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="label_16">
-         <property name="text">
-          <string>A009</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="8">
-        <widget class="QLabel" name="label_32">
-         <property name="text">
-          <string>A019</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QLabel" name="label_28">
-         <property name="text">
-          <string>A015</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="8">
-        <widget class="QSpinBox" name="A00D">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>149</number>
+          <number>155</number>
          </property>
          <property name="displayIntegerBase">
           <number>16</number>
@@ -820,6 +94,267 @@
          </property>
         </widget>
        </item>
+       <item row="1" column="4">
+        <widget class="QSpinBox" name="A009">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>143</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QSpinBox" name="A02B">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>156</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="12">
+        <widget class="QLabel" name="label_48">
+         <property name="text">
+          <string>A029</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_38">
+         <property name="text">
+          <string>A01F</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="11">
+        <widget class="QLabel" name="label_23">
+         <property name="text">
+          <string>A010</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="9">
+        <widget class="QSpinBox" name="A01A">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>195</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="6">
+        <widget class="QLabel" name="label_42">
+         <property name="text">
+          <string>A023</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="11">
+        <widget class="QLabel" name="label_47">
+         <property name="text">
+          <string>A028</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="8">
+        <widget class="QSpinBox" name="A019">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>157</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_37">
+         <property name="text">
+          <string>A01E</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="11">
+        <widget class="QLabel" name="label_59">
+         <property name="text">
+          <string>A034</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>A006</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="10">
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>A01B</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="5">
+        <widget class="QSpinBox" name="A022">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>160</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="12">
+        <widget class="QSpinBox" name="A035">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>177</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_49">
+         <property name="text">
+          <string>A02A</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <widget class="QLabel" name="label_32">
+         <property name="text">
+          <string>A019</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QLabel" name="label_43">
+         <property name="text">
+          <string>A024</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QSpinBox" name="A017">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>174</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="A006">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>137</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="10">
+        <widget class="QSpinBox" name="A027">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>144</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="7">
+        <widget class="QSpinBox" name="A030">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>142</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>A00C</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>A015</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QSpinBox" name="A01E">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>138</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="9">
+        <widget class="QSpinBox" name="A032">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>189</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="8">
+        <widget class="QLabel" name="label_56">
+         <property name="text">
+          <string>A031</string>
+         </property>
+        </widget>
+       </item>
        <item row="9" column="6">
         <widget class="QSpinBox" name="A02F">
          <property name="maximum">
@@ -827,6 +362,74 @@
          </property>
          <property name="value">
           <number>180</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>A016</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="label_51">
+         <property name="text">
+          <string>A02C</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="9">
+        <widget class="QLabel" name="label_45">
+         <property name="text">
+          <string>A026</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="4">
+        <widget class="QSpinBox" name="A02D">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>140</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>A00B</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>A018</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="10">
+        <widget class="QLabel" name="label_46">
+         <property name="text">
+          <string>A027</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="8">
+        <widget class="QSpinBox" name="A025">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>147</number>
          </property>
          <property name="displayIntegerBase">
           <number>16</number>
@@ -846,38 +449,36 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label_13">
-         <property name="text">
-          <string>A006</string>
+       <item row="3" column="10">
+        <widget class="QSpinBox" name="A01B">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>140</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
          </property>
         </widget>
        </item>
-       <item row="7" column="5">
-        <widget class="QLabel" name="label_53">
-         <property name="text">
-          <string>A02E</string>
+       <item row="1" column="6">
+        <widget class="QSpinBox" name="A00B">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>198</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
          </property>
         </widget>
        </item>
-       <item row="0" column="9">
-        <widget class="QLabel" name="label_21">
+       <item row="7" column="4">
+        <widget class="QLabel" name="label_52">
          <property name="text">
-          <string>A00E</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_26">
-         <property name="text">
-          <string>A013</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="11">
-        <widget class="QLabel" name="label_23">
-         <property name="text">
-          <string>A010</string>
+          <string>A02D</string>
          </property>
         </widget>
        </item>
@@ -894,23 +495,110 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="8">
-        <widget class="QSpinBox" name="A025">
+       <item row="1" column="8">
+        <widget class="QSpinBox" name="A00D">
          <property name="maximum">
           <number>255</number>
          </property>
          <property name="value">
-          <number>147</number>
+          <number>149</number>
          </property>
          <property name="displayIntegerBase">
           <number>16</number>
          </property>
         </widget>
        </item>
-       <item row="2" column="5">
-        <widget class="QLabel" name="label_29">
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="A007">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>146</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="6">
+        <widget class="QSpinBox" name="A023">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>204</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="10">
+        <widget class="QLabel" name="label_58">
          <property name="text">
-          <string>A016</string>
+          <string>A033</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="5">
+        <widget class="QLabel" name="label_53">
+         <property name="text">
+          <string>A02E</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="12">
+        <widget class="QLabel" name="label_60">
+         <property name="text">
+          <string>A035</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="11">
+        <widget class="QSpinBox" name="A010">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>161</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>A007</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>A012</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="7">
+        <widget class="QLabel" name="label_55">
+         <property name="text">
+          <string>A030</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="11">
+        <widget class="QSpinBox" name="A028">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>159</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
          </property>
         </widget>
        </item>
@@ -927,51 +615,316 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="3">
-        <widget class="QLabel" name="label_39">
+       <item row="2" column="9">
+        <widget class="QLabel" name="label_33">
          <property name="text">
-          <string>A020</string>
+          <string>A01A</string>
          </property>
         </widget>
        </item>
-       <item row="7" column="10">
-        <widget class="QLabel" name="label_58">
+       <item row="2" column="11">
+        <widget class="QLabel" name="label_35">
          <property name="text">
-          <string>A033</string>
+          <string>A01C</string>
          </property>
         </widget>
        </item>
-       <item row="9" column="8">
-        <widget class="QSpinBox" name="A031">
+       <item row="3" column="2">
+        <widget class="QSpinBox" name="A013">
          <property name="maximum">
           <number>255</number>
          </property>
          <property name="value">
-          <number>155</number>
+          <number>154</number>
          </property>
          <property name="displayIntegerBase">
           <number>16</number>
          </property>
         </widget>
        </item>
-       <item row="4" column="6">
-        <widget class="QLabel" name="label_42">
+       <item row="0" column="8">
+        <widget class="QLabel" name="label_20">
          <property name="text">
-          <string>A023</string>
+          <string>A00D</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="10">
-        <widget class="QLabel" name="label_34">
-         <property name="text">
-          <string>A01B</string>
+       <item row="9" column="10">
+        <widget class="QSpinBox" name="A033">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>139</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
          </property>
         </widget>
        </item>
-       <item row="7" column="4">
-        <widget class="QLabel" name="label_52">
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="A012">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>141</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLabel" name="label_40">
          <property name="text">
-          <string>A02D</string>
+          <string>A021</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QSpinBox" name="A01F">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>148</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="5">
+        <widget class="QSpinBox" name="A02E">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>152</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QSpinBox" name="A02A">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>142</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QSpinBox" name="A021">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>144</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QSpinBox" name="A015">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>139</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="10">
+        <widget class="QLabel" name="label_22">
+         <property name="text">
+          <string>A00F</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9">
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>A00E</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="9">
+        <widget class="QLabel" name="label_57">
+         <property name="text">
+          <string>A032</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>A014</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QSpinBox" name="A018">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>143</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="A008">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>162</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="7">
+        <widget class="QSpinBox" name="A024">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>137</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="6">
+        <widget class="QLabel" name="label_54">
+         <property name="text">
+          <string>A02F</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QSpinBox" name="A014">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>186</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="11">
+        <widget class="QSpinBox" name="A01C">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>153</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="12">
+        <widget class="QSpinBox" name="A011">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>207</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="12">
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>A01D</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="8">
+        <widget class="QLabel" name="label_44">
+         <property name="text">
+          <string>A025</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>A013</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="12">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>A011</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QLabel" name="label_41">
+         <property name="text">
+          <string>A022</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>A008</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="12">
+        <widget class="QSpinBox" name="A029">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>201</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="11">
+        <widget class="QSpinBox" name="A034">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>151</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
          </property>
         </widget>
        </item>
@@ -988,8 +941,21 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="1">
-        <widget class="QSpinBox" name="A01E">
+       <item row="1" column="9">
+        <widget class="QSpinBox" name="A00E">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>171</number>
+         </property>
+         <property name="displayIntegerBase">
+          <number>16</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QSpinBox" name="A00C">
          <property name="maximum">
           <number>255</number>
          </property>
@@ -1001,17 +967,94 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="11">
-        <widget class="QSpinBox" name="A028">
+       <item row="2" column="6">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>A017</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="label_50">
+         <property name="text">
+          <string>A02B</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>A009</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QSpinBox" name="A02C">
          <property name="maximum">
           <number>255</number>
          </property>
          <property name="value">
-          <number>159</number>
+          <number>192</number>
          </property>
          <property name="displayIntegerBase">
           <number>16</number>
          </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="10" column="1" colspan="12">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="Tdither">
+            <property name="text">
+             <string>dither</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="Thighlight">
+            <property name="text">
+             <string>high light</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_61">
+            <property name="text">
+             <string>contrast</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QSpinBox" name="Tcontrast"/>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="Tloadtable">
+            <property name="text">
+             <string>Load table</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>

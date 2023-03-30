@@ -14,6 +14,7 @@ from PySide6.QtCore import QFile, QIODevice, QObject, Slot, QTimer
 
 import gb_lunk
 import picdump
+import contrast_tables
 
 class CDC_comm():
     def __init__(self, wind):
@@ -242,9 +243,28 @@ if __name__ == "__main__":
         data = file.read(-1)
         file.close()
         load_cfg(window,data)
+    
+    def loadtable(window):
+        data = bytearray(dump_cfg(window))
+        contrast = window.Tcontrast.value()
+        if window.Tdither.isChecked():
+            if window.Thighlight.isChecked():
+                data[6:0x36] = bytes(contrast_tables.ditherHighLightValues[contrast])
+            else:
+                data[6:0x36] = bytes(contrast_tables.ditherLowLightValues[contrast])
+        else:
+            if window.Thighlight.isChecked():
+                data[6:0x36] = bytes(contrast_tables.ditherNoHighLightValues[contrast])
+            else:
+                data[6:0x36] = bytes(contrast_tables.ditherNoLowLightValues[contrast])
+
+        load_cfg(window,data)
+
     window.Save.clicked.connect(lambda : save(window))
     window.Read.clicked.connect(lambda : load(window))
     window.SetupUVC.clicked.connect(lambda : setup_uvc(window))
+    window.Tloadtable.clicked.connect(lambda : loadtable(window))
+
     timer = QTimer(window)
     timer.timeout.connect(lambda: window.player.snap(window))
     timer.setInterval(100)
