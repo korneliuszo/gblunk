@@ -12,7 +12,7 @@
 
 .wrap_target
 	set x, 7           side 1
-	pull ifempty       side 1 ; stall in sane location
+	pull block         side 1 ; stall in sane location
 	irq wait 4         side 1 ; stall to sync
 bitloop:
     out pins, 1        side 0 [1] ; Stall here on empty (keep SCK deasserted)
